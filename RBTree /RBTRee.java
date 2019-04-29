@@ -85,7 +85,7 @@ public class RBTree
  delete_balance(q);
     }
   }
- public void delete_balance( Uzel x)
+ private void delete_balance( Uzel x)
   {
  while(x!= root & & x.color = = " BLACK")
     {
@@ -158,7 +158,7 @@ public class RBTree
         
           
       
- public void put_balance(Uzel t) // баланс после добавления
+ private void put_balance(Uzel t) // баланс после добавления
   { 
  while (t!= root & & t.parent.color == "RED") //если отец красный и узел не корень
     { 
@@ -217,7 +217,7 @@ public class RBTree
   }
       
    
- public void rotateR(Uzel f) //правое вращение
+ private void rotateR(Uzel f) //правое вращение
     { 
  Uzel h = f.left;
  f.left = h.right;
@@ -246,7 +246,7 @@ public class RBTree
  f.parent = h;
         }
     }
- public void rotateL(Uzel f) / / левое вращение
+ private void rotateL(Uzel f) / / левое вращение
     { 
  Uzel h = f.right;
  f.right = h.left;
@@ -281,7 +281,7 @@ public class RBTree
  help_meth(help);
     }
       
- public void help_meth(Uzel u) //рекурсивно выводим все дерево
+ private void help_meth(Uzel u) //рекурсивно выводим все дерево
       { 
  while(u.left!=null || u.right!=null )
         {
