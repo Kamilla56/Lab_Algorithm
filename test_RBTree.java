@@ -1,5 +1,7 @@
-class test_RBTree{
-   public static void main(String[] args) {
+class test_RBTree
+{
+   public static void main(String[] args) 
+   {
      RBTree test = new RBTree();
      Uzel p1 = new Uzel(5);
      Uzel p2 = new Uzel(0);
